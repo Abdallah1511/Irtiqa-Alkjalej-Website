@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth !important;
+}
+:root {
+    --bgColor: #00172f;
+    --secondBgColor: rgba(2, 52, 105, 0.41);
+    --seconColor: #f9c747;
+    --whiteColor: #fff;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #032a55;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e6b438;
+}
+
+body {
+    font-family: 'Cairo',
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol" !important; 
+    color: var(--whiteColor);
+    background-color: var(--bgColor) !important;
+    overflow-x: hidden !important;
+}
+
+/* [Global Selector] Start */
+button:focus {
+    outline: none !important;
+}
+.control-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.contact-button {
+    background-color: var(--seconColor);
+    border: 0;
+    color: var(--bgColor);
+    font-weight: bold !important;
+    border-radius: 0 !important;
+    padding: 15px 22px !important;
+    transition: 0.5s !important;
+}
+
+.contact-button svg {
+    padding-right: 5px;
+}
+
+.contact-button:hover {
+    color: var(--whiteColor) !important;
+}
+
+#fixed-whatsapp-btn {
+    position: fixed;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--whiteColor);
+    background-color: #25d366;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+/* [Global Selector] End */
+
+/* [Header] Start */
+.topbar-header {
+    background-color: var(--seconColor) !important;
+    color: var(--bgColor) !important;
+}
+
+@media (max-width: 992px) {
+    .topbar-header .company-data {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.topbar-header a {
+    font-size: 14px !important;
+}
+
+.topbar-header .social-item svg,
+.topbar-header a {
+    color: var(--bgColor) !important;
+}
+
+nav.navbar {
+    border-bottom: 1px solid #ffffff42;
+    background-color: var(--bgColor);
+}
+nav.navbar.sticky-top {
+    box-shadow: 0 6px 17px 1px var(--bgColor);
+}
+
+ul.navbar-nav>li>a {
+    color: var(--whiteColor) !important;
+    margin-left: 8px;
+    transition: 0.8s;
+    font-weight: bold;
+}
+
+ul.navbar-nav li a {
+    transition: 0.5s !important;
+}
+
+a.nav-link:hover,
+a.nav-link.active {
+    background-color: var(--seconColor);
+    color: var(--whiteColor);
+    border-radius: 30px;
+    color: var(--bgColor) !important;
+}
+
+a.navbar-brand img {
+    width: 178px;
+}
+
+ul.dropdown-menu {
+    background-color: var(--seconColor) !important;
+    right: 0 !important;
+}
+
+ul.dropdown-menu svg {
+    padding-left: 5px;
+}
+
+a.nav-link.dropdown-toggle:hover+.dropdown-menu,
+ul.dropdown-menu:hover {
+    display: block !important;
+}
+
+.dropdown-menu {
+    transition: 0.5s !important;
+}
+
+span.navbar-toggler-icon svg {
+    color: var(--whiteColor);
+}
+
+button.navbar-toggler {
+    border: 1px solid #ffffff52;
+    box-shadow: 0 2px 13px 1px #000000e8;
+}
+
+@media (max-width: 992px) {
+    ul.navbar-nav {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    div#navbarSupportedContent>div:first-of-type {
+        padding-bottom: 2rem;
+    }
+
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+}
+
+/* [Header] End */
+
+/* [Hight Light Section] Start */
+.high-light {
+    color: var(--whiteColor) !important;
+}
+section.high-light h2 {
+    font-weight: 600;
+}
+@media (max-width: 992px) {
+    .high-light .row {
+        flex-direction: column-reverse !important;
+    }
+
+    .high-light .row>div:nth-child(1) {
+        text-align: center !important;
+    }
+}
+
+/* [Hight Light Section] End */
+
+/* [Irtiqa Statistics Section] Start */
+.statistics {
+    position: relative;
+}
+.statistics > svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    z-index: -1;
+}
+@media (min-width: 992px) {
+    .statistics>svg {
+        width: 100%;
+    }
+}
+.statistics .statistic-item > span:nth-child(1) {
+    color: var(--seconColor);
+    font-size: 30px;
+    font-weight: bold;
+}
+/* [Irtiqa Statistics Section] End */
+
+/* [Services-Irtiqa-Section] Start */
+.services {
+    background-color: var(--secondBgColor);
+}
+.services > div > h3 {
+    font-weight: bold;
+}
+.services .services-container .services-image > img {
+    width: 65%;
+}
+section.services .row .col-12.col-lg-6:nth-child(3) .services-image>img {
+    width: 75%;
+}
+.services .services-container .services-content a {
+    padding: 0.5rem 1rem !important;
+    display: block;
+    width: fit-content;
+    margin-bottom: 1.25rem;
+}
+.services .services-container .services-content h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+.services .services-container .services-content p {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.7;
+}
+@media (min-width: 992px) {
+    .services .row .col-12.col-lg-6:nth-child(1) {
+        border-left: 1px solid #ffffff36;
+        border-bottom: 1px solid #ffffff36;
+    }
+    .services .row .col-12.col-lg-6:nth-child(2) {
+        border-bottom: 1px solid #ffffff36;
+    } 
+    .services .row .col-12.col-lg-6:nth-child(3) {
+        border-left: 1px solid #ffffff36;
+    }
+}
+@media (max-width: 992px) {
+    .services>div>h3 {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+    .services .services-container .services-image > img {
+        width: 30%;
+        margin-bottom: 1rem;
+    }
+    section.services .row .col-12.col-lg-6:nth-child(3) .services-image>img {
+        width: 45%;
+    }
+    .services .services-container .services-content a {
+        margin: 1.25rem auto 2rem !important;
+    }
+    .services .services-container .services-content h3,
+    .services .services-container .services-content p {
+        text-align: center;
+    }
+}
+/* [Services-Irtiqa-Section] End */
+
+/* [Marketing Section] Start */
+.marketing .marketing-content > h3 {
+    font-weight: bold;
+}
+@media (max-width: 992px) {
+    .marketing .marketing-content>h3 {
+        font-size: 22px;
+    }
+}
+.marketing .marketing-content > p,
+.product-development p {
+    color: #d5d5d5;
+    line-height: 1.7;
+    font-size: 15px;
+}
+.marketing .marketing-content>.marketing-features .marketing-item svg {
+    color: var(--seconColor);
+}
+.marketing .marketing-content>.marketing-features .marketing-item span {
+    font-weight: bold;
+    font-size: 14px;
+}
+/* [Marketing Section] End */
+
+/* [product-development-one] Start */
+.product-development-one {
+    background-color: var(--secondBgColor);
+}
+.product-development > div > h3 {
+    font-weight: bold;
+}
+@media (max-width: 992px) {
+    .product-development>div>h3 {
+        font-size: 22px;
+    }
+    .product-development .row h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+/* [product-development-one] End */
+
+/*  [product-development-two] Start  */
+.product-development-three {
+    background-color: var(--secondBgColor);
+}
+/*  [product-development-two] End  */
+
+/* < !-- [Successful Partners] Start --> */
+.successful-partners {
+    background-color: var(--secondBgColor);
+}
+.successful-partners > div > h3 {
+    font-weight: bold;
+}
+/* < !-- [Successful Partners] Start --> */
+
+/* [Footer] Start */
+.footer .irtiqa-content > div:nth-child(1) > img {
+    width: 60%;
+} 
+.footer .irtiqa-content > p {
+    font-size: 14px;
+    color: #d5d5d5;
+}
+.footer .irtiqa-content .ul-social a {
+    color: var(--seconColor);
+    margin-left: 5px;
+}
+.footer .irtiqa-menu h5 {
+    font-weight: bold;
+}
+.footer .irtiqa-menu ul a {
+    color:#d5d5d5;
+    transition: 0.5s;
+    font-size: 14px;
+}
+.footer .irtiqa-menu ul a:hover {
+    padding-right: 5px;
+    color: var(--seconColor);
+}
+.footer .irtiqa-menu ul svg {
+    font-size: 14px;
+    color: var(--seconColor);
+}
+.footer .contact-button {
+    font-size: 14px !important ;
+    padding: 7px 10px !important;
+}
+.footer .footer-title {
+    position: relative;
+}
+.footer .footer-title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: var(--seconColor);
+    border-radius: 5px;
+}
+@media (min-width: 992px) {
+    .footer .footer-title::before {
+        left: 100%;
+        transform: translateX(-100%);
+    }
+}
+.footer .irtiqa-contact h5,
+.footer .irtiqa-certification h5  {
+    font-weight: bold;
+}
+.footer .irtiqa-contact a {
+    color: var(--seconColor);
+} 
+.footer .irtiqa-contact {
+    font-size: 14px;
+}
+.footer .irtiqa-contact .marouf>img{
+    width: 30%;
+    border-radius: 10px;
+}
+.footer .irtiqa-certification .certification > a:nth-child(1) > img {
+    width: 28%;
+}
+@media (min-width:992px) {
+    .footer .irtiqa-certification .certification>a:nth-child(1) {
+        position: relative;
+        right: -35px;
+    }
+}
+.footer .irtiqa-certification .certification>a:nth-child(1) span {
+    color: var(--seconColor);
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    right: -7px;
+}
+.min-footer {
+    background-color: var(--secondBgColor);
+    border-radius: 15px;
+    box-shadow: 0 2px 13px 1px #0000001e !important;
+}
+.min-footer .copyright {
+    font-size: 14px;
+}
+.min-footer .copyright a {
+    color: var(--seconColor);
+}
+/* [Footer] End */
+
+
+
+/* [Irtiqa Services Page] Start */
+.page-title {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1500' height='300' preserveAspectRatio='none' viewBox='0 0 1500 300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask20618%26quot%3b)' fill='none'%3e%3crect width='1500' height='300' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient20619%26quot%3b)'%3e%3c/rect%3e%3crect width='144' height='144' clip-path='url(%26quot%3b%23SvgjsClipPath20620%26quot%3b)' x='297.71' y='135.78' fill='url(%26quot%3b%23SvgjsPattern20621%26quot%3b)' transform='rotate(92.57%2c 369.71%2c 207.78)'%3e%3c/rect%3e%3cpath d='M142.26 129.1 L77.91 102.75999999999999L135.05328162531345 90.96171837468654z' stroke='rgba(249%2c 199%2c 71%2c 0.25)' stroke-width='1' stroke-dasharray='3%2c 2'%3e%3c/path%3e%3crect width='150.04000000000002' height='150.04000000000002' clip-path='url(%26quot%3b%23SvgjsClipPath20622%26quot%3b)' x='1006.92' y='-69.03' fill='url(%26quot%3b%23SvgjsPattern20623%26quot%3b)' transform='rotate(93.24%2c 1081.94%2c 5.99)'%3e%3c/rect%3e%3cpath d='M908.86 173.04 L904.01 125.86L933.2353824156393 122.64961758436067z' stroke='rgba(249%2c 199%2c 71%2c 0.25)' stroke-width='2.11' stroke-dasharray='4%2c 4'%3e%3c/path%3e%3crect width='156' height='156' clip-path='url(%26quot%3b%23SvgjsClipPath20624%26quot%3b)' x='719.13' y='-36.2' fill='url(%26quot%3b%23SvgjsPattern20625%26quot%3b)' transform='rotate(69.69%2c 797.13%2c 41.8)'%3e%3c/rect%3e%3ccircle r='45.564301823377505' cx='150.81' cy='152.87' fill='rgba(249%2c 199%2c 71%2c 0.25)'%3e%3c/circle%3e%3crect width='72' height='72' clip-path='url(%26quot%3b%23SvgjsClipPath20626%26quot%3b)' x='96.13' y='136.94' fill='url(%26quot%3b%23SvgjsPattern20627%26quot%3b)' transform='rotate(78.26%2c 132.13%2c 172.94)'%3e%3c/rect%3e%3cpath d='M440.74 234.17 L404.22 208.94L453.67599206319534 190.3590079368047z' stroke='rgba(0%2c 23%2c 47%2c 0.7)' stroke-width='1' stroke-dasharray='2%2c 2'%3e%3c/path%3e%3cpath d='M582.82 29.23L577.27 40.77 564.79 37.89 559.25 49.43 546.77 46.55 541.22 58.1 528.74 55.22M579.35 22.02L573.81 33.56 561.33 30.68 555.78 42.22 543.3 39.34 537.75 50.89 525.28 48.01M575.89 14.81L570.34 26.35 557.86 23.47 552.31 35.01 539.84 32.13 534.29 43.68 521.81 40.8' stroke='rgba(0%2c 23%2c 47%2c 0.7)' stroke-width='1.49'%3e%3c/path%3e%3cpath d='M1288.51 122.67L1295.16 133.62 1285.93 142.51 1292.58 153.45 1283.35 162.34 1290 173.29 1280.77 182.17M1280.58 121.64L1287.22 132.59 1278 141.47 1284.64 152.42 1275.42 161.31 1282.06 172.25 1272.84 181.14M1272.65 120.61L1279.29 131.56 1270.07 140.44 1276.71 151.39 1267.49 160.27 1274.13 171.22 1264.91 180.11' stroke='rgba(249%2c 199%2c 71%2c 0.25)' stroke-width='1' stroke-dasharray='3%2c 2'%3e%3c/path%3e%3cpath d='M367.26 137.72L378.37 144.1 374.58 156.34 385.68 162.72 381.9 174.95 393 181.33 389.21 193.56M359.82 140.65L370.92 147.03 367.13 159.26 378.24 165.64 374.45 177.88 385.55 184.26 381.77 196.49' stroke='rgba(249%2c 199%2c 71%2c 0.25)' stroke-width='1' stroke-dasharray='3%2c 3'%3e%3c/path%3e%3cpath d='M1457.67 221.38a5.6 5.6 0 1 0-3.32-10.7 5.6 5.6 0 1 0 3.32 10.7zM1452.92 206.1a5.6 5.6 0 1 0-3.32-10.7 5.6 5.6 0 1 0 3.32 10.7zM1448.17 190.82a5.6 5.6 0 1 0-3.32-10.7 5.6 5.6 0 1 0 3.32 10.7zM1443.42 175.54a5.6 5.6 0 1 0-3.32-10.7 5.6 5.6 0 1 0 3.32 10.7zM1482.45 247.18a5.6 5.6 0 1 0-3.32-10.69 5.6 5.6 0 1 0 3.32 10.69zM1477.7 231.9a5.6 5.6 0 1 0-3.32-10.69 5.6 5.6 0 1 0 3.32 10.69zM1472.95 216.63a5.6 5.6 0 1 0-3.32-10.7 5.6 5.6 0 1 0 3.32 10.7zM1468.2 201.35a5.6 5.6 0 1 0-3.32-10.7 5.6 5.6 0 1 0 3.32 10.7z' stroke='rgba(249%2c 199%2c 71%2c 0.25)' stroke-width='1'%3e%3c/path%3e%3cpath d='M630.88 153.49a5.6 5.6 0 1 0-10.15 4.76 5.6 5.6 0 1 0 10.15-4.76zM616.39 160.28a5.6 5.6 0 1 0-10.14 4.75 5.6 5.6 0 1 0 10.14-4.75zM601.9 167.07a5.6 5.6 0 1 0-10.14 4.75 5.6 5.6 0 1 0 10.14-4.75zM587.41 173.86a5.6 5.6 0 1 0-10.14 4.75 5.6 5.6 0 1 0 10.14-4.75zM653.07 125.43a5.6 5.6 0 1 0-10.14 4.75 5.6 5.6 0 1 0 10.14-4.75zM638.58 132.22a5.6 5.6 0 1 0-10.14 4.75 5.6 5.6 0 1 0 10.14-4.75zM624.09 139a5.6 5.6 0 1 0-10.14 4.76 5.6 5.6 0 1 0 10.14-4.76zM609.6 145.79a5.6 5.6 0 1 0-10.14 4.75 5.6 5.6 0 1 0 10.14-4.75zM675.26 97.37a5.6 5.6 0 1 0-10.14 4.75 5.6 5.6 0 1 0 10.14-4.75zM660.77 104.15a5.6 5.6 0 1 0-10.14 4.76 5.6 5.6 0 1 0 10.14-4.76zM646.28 110.94a5.6 5.6 0 1 0-10.14 4.75 5.6 5.6 0 1 0 10.14-4.75zM631.79 117.73a5.6 5.6 0 1 0-10.14 4.75 5.6 5.6 0 1 0 10.14-4.75z' fill='rgba(249%2c 199%2c 71%2c 0.25)'%3e%3c/path%3e%3cpath d='M364.53000000000003 68.65 L347.53000000000003 20.64L382.9812367455783 17.693763254421732z' fill='rgba(249%2c 199%2c 71%2c 0.25)'%3e%3c/path%3e%3cpath d='M520.11 39.15a5.6 5.6 0 1 0 10.75-3.17 5.6 5.6 0 1 0-10.75 3.17zM535.46 34.62a5.6 5.6 0 1 0 10.74-3.17 5.6 5.6 0 1 0-10.74 3.17zM550.8 30.09a5.6 5.6 0 1 0 10.75-3.17 5.6 5.6 0 1 0-10.75 3.17zM566.15 25.56a5.6 5.6 0 1 0 10.74-3.17 5.6 5.6 0 1 0-10.74 3.17z' fill='rgba(249%2c 199%2c 71%2c 0.25)'%3e%3c/path%3e%3cpath d='M1332.92 63.16a5.6 5.6 0 1 0-10.5-3.91 5.6 5.6 0 1 0 10.5 3.91zM1317.93 57.57a5.6 5.6 0 1 0-10.5-3.91 5.6 5.6 0 1 0 10.5 3.91zM1302.93 51.98a5.6 5.6 0 1 0-10.49-3.91 5.6 5.6 0 1 0 10.49 3.91zM1287.94 46.4a5.6 5.6 0 1 0-10.49-3.91 5.6 5.6 0 1 0 10.49 3.91zM1368.49 59.34a5.6 5.6 0 1 0-10.49-3.91 5.6 5.6 0 1 0 10.49 3.91zM1353.5 53.75a5.6 5.6 0 1 0-10.49-3.91 5.6 5.6 0 1 0 10.49 3.91zM1338.51 48.17a5.6 5.6 0 1 0-10.5-3.91 5.6 5.6 0 1 0 10.5 3.91zM1323.51 42.58a5.6 5.6 0 1 0-10.49-3.91 5.6 5.6 0 1 0 10.49 3.91zM1404.07 55.53a5.6 5.6 0 1 0-10.5-3.92 5.6 5.6 0 1 0 10.5 3.92zM1389.07 49.94a5.6 5.6 0 1 0-10.49-3.91 5.6 5.6 0 1 0 10.49 3.91zM1374.08 44.35a5.6 5.6 0 1 0-10.49-3.91 5.6 5.6 0 1 0 10.49 3.91zM1359.09 38.76a5.6 5.6 0 1 0-10.5-3.91 5.6 5.6 0 1 0 10.5 3.91z' stroke='rgba(0%2c 23%2c 47%2c 0.7)' stroke-width='1.05' stroke-dasharray='2%2c 2'%3e%3c/path%3e%3cpath d='M1474.56 176.81a5.6 5.6 0 1 0 11.07 1.68 5.6 5.6 0 1 0-11.07-1.68zM1490.38 179.21a5.6 5.6 0 1 0 11.07 1.67 5.6 5.6 0 1 0-11.07-1.67zM1506.2 181.6a5.6 5.6 0 1 0 11.07 1.68 5.6 5.6 0 1 0-11.07-1.68zM1522.02 184a5.6 5.6 0 1 0 11.07 1.67 5.6 5.6 0 1 0-11.07-1.67z' fill='rgba(249%2c 199%2c 71%2c 0.25)'%3e%3c/path%3e%3cpath d='M189.38 293.59a5.6 5.6 0 1 0 7.29-8.51 5.6 5.6 0 1 0-7.29 8.51zM199.79 281.44a5.6 5.6 0 1 0 7.29-8.51 5.6 5.6 0 1 0-7.29 8.51zM210.2 269.29a5.6 5.6 0 1 0 7.29-8.5 5.6 5.6 0 1 0-7.29 8.5zM220.61 257.14a5.6 5.6 0 1 0 7.29-8.5 5.6 5.6 0 1 0-7.29 8.5zM180.7 328.29a5.6 5.6 0 1 0 7.29-8.5 5.6 5.6 0 1 0-7.29 8.5zM191.11 316.15a5.6 5.6 0 1 0 7.29-8.51 5.6 5.6 0 1 0-7.29 8.51zM201.53 304a5.6 5.6 0 1 0 7.28-8.51 5.6 5.6 0 1 0-7.28 8.51zM211.94 291.85a5.6 5.6 0 1 0 7.29-8.5 5.6 5.6 0 1 0-7.29 8.5zM172.02 363a5.6 5.6 0 1 0 7.29-8.5 5.6 5.6 0 1 0-7.29 8.5zM182.44 350.86a5.6 5.6 0 1 0 7.29-8.51 5.6 5.6 0 1 0-7.29 8.51zM192.85 338.71a5.6 5.6 0 1 0 7.29-8.51 5.6 5.6 0 1 0-7.29 8.51zM203.26 326.56a5.6 5.6 0 1 0 7.29-8.5 5.6 5.6 0 1 0-7.29 8.5z' stroke='rgba(0%2c 23%2c 47%2c 0.7)' stroke-width='1.93'%3e%3c/path%3e%3cpath d='M1429.57 216.23999999999998 L1422.36 261.49L1444.9570964534332 257.8570964534333z' fill='rgba(0%2c 23%2c 47%2c 0.7)'%3e%3c/path%3e%3cpath d='M41.25 117.62a5.6 5.6 0 1 0 11.15 0.98 5.6 5.6 0 1 0-11.15-0.98zM57.18 119.02a5.6 5.6 0 1 0 11.16 0.99 5.6 5.6 0 1 0-11.16-0.99zM73.12 120.43a5.6 5.6 0 1 0 11.16 0.98 5.6 5.6 0 1 0-11.16-0.98zM89.06 121.83a5.6 5.6 0 1 0 11.16 0.99 5.6 5.6 0 1 0-11.16-0.99zM7.96 130.74a5.6 5.6 0 1 0 11.16 0.99 5.6 5.6 0 1 0-11.16-0.99zM23.9 132.15a5.6 5.6 0 1 0 11.16 0.98 5.6 5.6 0 1 0-11.16-0.98zM39.84 133.56a5.6 5.6 0 1 0 11.16 0.98 5.6 5.6 0 1 0-11.16-0.98zM55.78 134.96a5.6 5.6 0 1 0 11.16 0.99 5.6 5.6 0 1 0-11.16-0.99z' fill='rgba(249%2c 199%2c 71%2c 0.25)'%3e%3c/path%3e%3crect width='114.8' height='114.8' clip-path='url(%26quot%3b%23SvgjsClipPath20628%26quot%3b)' x='945.71' y='179.55' fill='url(%26quot%3b%23SvgjsPattern20629%26quot%3b)' transform='rotate(269.51%2c 1003.11%2c 236.95)'%3e%3c/rect%3e%3cpath d='M1023.76 288.54L1028.88 300.27 1018.55 307.84 1023.66 319.58 1013.33 327.15 1018.45 338.89 1008.12 346.46M1016.04 286.45L1021.15 298.19 1010.82 305.76 1015.94 317.5 1005.61 325.07 1010.73 336.81 1000.4 344.38M1008.31 284.36L1013.43 296.1 1003.1 303.67 1008.22 315.41 997.89 322.98 1003 334.72 992.67 342.29' stroke='rgba(0%2c 23%2c 47%2c 0.7)' stroke-width='2.92' stroke-dasharray='3%2c 2'%3e%3c/path%3e%3crect width='113.28' height='113.28' clip-path='url(%26quot%3b%23SvgjsClipPath20630%26quot%3b)' x='718.03' y='215.1' fill='url(%26quot%3b%23SvgjsPattern20631%26quot%3b)' transform='rotate(48.78%2c 774.67%2c 271.74)'%3e%3c/rect%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask20618'%3e%3crect width='1500' height='300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='20%25' y1='-100%25' x2='80%25' y2='200%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient20619'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern20621'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(249%2c 199%2c 71%2c 0.25)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath20620'%3e%3ccircle r='36' cx='369.71' cy='207.78'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6.82' height='6.82' patternUnits='userSpaceOnUse' id='SvgjsPattern20623'%3e%3cpath d='M0 6.82L3.41 0L6.82 6.82' stroke='rgba(0%2c 23%2c 47%2c 0.7)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath20622'%3e%3ccircle r='37.510000000000005' cx='1081.94' cy='5.99'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern20625'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='rgba(0%2c 23%2c 47%2c 0.7)' fill='none' stroke-width='1.73'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath20624'%3e%3ccircle r='39' cx='797.13' cy='41.8'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern20627'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='rgba(249%2c 199%2c 71%2c 0.25)' fill='none' stroke-width='1'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath20626'%3e%3ccircle r='18' cx='132.13' cy='172.94'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='114.8' height='11.48' patternUnits='userSpaceOnUse' id='SvgjsPattern20629'%3e%3crect width='114.8' height='5.74' x='0' y='0' fill='rgba(249%2c 199%2c 71%2c 0.25)'%3e%3c/rect%3e%3crect width='114.8' height='5.74' x='0' y='5.74' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath20628'%3e%3ccircle r='28.7' cx='1003.11' cy='236.95'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='9.44' height='9.44' patternUnits='userSpaceOnUse' id='SvgjsPattern20631'%3e%3cpath d='M4.72 1L4.72 8.44M1 4.72L8.44 4.72' stroke='rgba(0%2c 23%2c 47%2c 0.7)' fill='none' stroke-width='2.42'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath20630'%3e%3ccircle r='28.32' cx='774.67' cy='271.74'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% ;
+}
+.page-title a {
+    color: var(--seconColor);
+    transition: 0.5s;
+}
+.irtiqa-alkhalej-services p,
+.about-us-section p {
+    color: #d5d5d5;
+    line-height: 1.7;
+}
+.page-title h4,
+.irtiqa-alkhalej-services h5,
+.about-us-section h2 {
+    font-weight: bold;
+}
+/* [Irtiqa Services Page] End */
+
+/* [Develop Websites] Start */
+.develop-websites,
+.manage-social-media {
+    background-color: var(--secondBgColor);
+}
+/* [Develop Websites] End */
+
+/* [About Us Page] Start */
+.about-us-section .statistic-item span:nth-child(1) {
+    color: var(--seconColor);
+    font-weight: bold;
+    font-size: 22px;
+}
+.about-us-section .statements {
+    background-color: var(--secondBgColor);
+    border-radius: 15px;
+}
+.about-us footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.164);
+}
+/* [About Us Page] End */
